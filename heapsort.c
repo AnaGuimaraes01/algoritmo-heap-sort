@@ -1,6 +1,9 @@
 // Implementação do Heap Sort
 #include <stdio.h>
 #include "heapsort.h"
+#include <locale.h>
+
+
 
 // Função para trocar dois elementos
 static void swap(int *a, int *b) {

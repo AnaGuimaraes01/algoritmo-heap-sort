@@ -1,8 +1,12 @@
-
 #include <stdio.h>
+#include <windows.h>    // Necessário para SetConsoleCP e SetConsoleOutputCP
 #include "heapsort.h"
 
 int main(void) {
+    // Configura o console do Windows para UTF-8
+    SetConsoleCP(65001);       // Entrada
+    SetConsoleOutputCP(65001); // Saída
+
     int n;
 
     printf("Digite a quantidade de elementos: ");
@@ -13,8 +17,8 @@ int main(void) {
 
     int arr[n];
 
-    printf("Digite os %d elementos: ", n);
     for (int i = 0; i < n; i++) {
+        printf("Digite o %dº número: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
