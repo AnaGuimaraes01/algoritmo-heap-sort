@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <windows.h>    // Necessário para SetConsoleCP e SetConsoleOutputCP
+#include <windows.h>   
 #include "heapsort.h"
 
 int main(void) {
