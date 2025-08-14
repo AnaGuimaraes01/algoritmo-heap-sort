@@ -1,5 +1,6 @@
+// main.c
 #include <stdio.h>
-#include <windows.h>   
+#include <windows.h>   // Necessário para SetConsoleCP e SetConsoleOutputCP
 #include "heapsort.h"
 
 int main(void) {
@@ -19,7 +20,7 @@ int main(void) {
 
     for (int i = 0; i < n; i++) {
         printf("Digite o %dº número: ", i + 1);
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[i]); // Agora aceita números negativos também
     }
 
     heapSort(arr, n);
